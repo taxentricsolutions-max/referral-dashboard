@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Referral Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Referral Dashboard - Taxentric</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-bg"></div>
+  <div class="page-overlay"></div>
 
-<a href="https://taxentric.com" class="back-link">← Back to Taxentric</a>
+  <header class="site-header">
+    <a href="https://taxentric.com" class="button" style="padding:8px 12px; font-size:.9rem;">← Back to Taxentric</a>
+  </header>
 
-<div class="card">
-  <h1>Your Referral Dashboard</h1>
+  <main class="page-center">
+    <div class="card">
+      <h1 class="dashboard-header">Your Referral Dashboard</h1>
 
-  <div class="stat">
-    <strong>Clicks:</strong> <span id="clicks">–</span>
-  </div>
+      <div class="dashboard-row">
+        <span>Total Clicks:</span>
+        <span id="totalClicks">0</span>
+      </div>
 
-  <div class="stat">
-    <strong>Signups:</strong> <span id="signups">–</span>
-  </div>
+      <div class="dashboard-row">
+        <span>Total Signups:</span>
+        <span id="totalSignups">0</span>
+      </div>
 
-  <div class="stat">
-    <strong>Rewards Earned:</strong> $<span id="rewards">0</span>
-  </div>
+      <div class="dashboard-row">
+        <span>Total Filed:</span>
+        <span id="totalFiled">0</span>
+      </div>
 
-  <p class="legal">
-  Rewards are earned only when a referred individual completes and files a paid tax return with Taxentric Solutions.
-  Referral signups alone do not qualify for rewards. Rewards are issued after filing is confirmed.
-  Taxentric Solutions reserves the right to verify referrals and deny rewards for fraud, abuse, or ineligible filings.
-</p>
+      <a id="dashboardLink" href="https://portal.taxentric.com" class="button mt-4">
+        Go to Client Portal
+      </a>
+    </div>
+  </main>
 
-</div>
-
-<script src="dashboard.js"></script>
+  <script src="dashboard.js"></script>
 </body>
 </html>
